@@ -1,0 +1,18 @@
+#page-header{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
+        url('./imgs/swans.png');
+
+}
+
+#story-form{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 50px;
+}
+
+#story{
+    height: 430px;
+    width: 900px;
+}

@@ -1,0 +1,43 @@
+#page-header{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
+        url('imgs/let-me-show-you-my-new-wallpaper-created-by-me-v0-8y84wsnpwtfe1-Picsart-AiImageEnhancer.webp');
+}
+
+.transparant-box-mission{
+    border: 20px solid #c5be6ac1;
+    border-bottom: 20px solid #c5be6ac1;
+    position: relative;
+    height: 50vh;
+    width: 515px;
+    left: 30px;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+#mission-text{
+    position: absolute;
+    left: 8px;
+}
+
+#hand-earth-img{
+    width: 520px;
+    height: 480px;
+    position: relative;
+    margin-top: -500px;
+    left: 780px;
+    
+}
+
+.hand-earth-div{
+    width: 290px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+

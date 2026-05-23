@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="shared-page.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cinzel">
+</head>
+<body>
+
+    <div id="page-header">
+        <div id="logo-container">
+            <a href="index.html">
+                <img id="logo" src="imgs/Screenshot 2026-03-26 at 10,23,32 AM-Picsart-BackgroundRemover.png">
+            </a>
+        </div>
+        <div id="navigation">
+            <button id="mission" onclick="window.location.href='mission.html'">My Mission</button>
+            <button id="create-story" onclick="window.location.href='create-story.html'">Create a Story!</button>
+            <button id="all-stories" onclick="window.location.href='all-stories.html'">All Stories</button>
+            <button id="contact" onclick="window.location.href='contact.html'">Contact</button>
+        </div>
+        
+    </div>
+
+    <div id="page-body">
+        <h1 id="page-title">Contact</h1>
+    </div>
+
+        <form class="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbwCpSYMLYrOO8tg2T-QusIzPtBm2bldxJBmP9zM0Me7wsk3Fz54BaoaW-vNSws2QrfkAQ/exec">
+            <input type="text" id="name" name="name" placeholder="Name:">
+      
+            <input type="text" id="email" name="email" placeholder="Email:">
+
+            <textarea type="text" id="message" name="message" placeholder="Message:"></textarea>
+        
+            <button type="submit" id="contact-message-submission">Submit</button>
+       
+        </form>
+  
+    </body>
+</html>

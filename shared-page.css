@@ -1,0 +1,58 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    overflow-x: hidden
+}
+
+#page-header{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 130px;
+    border-bottom: 4px solid #c5be6a;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-body{
+    padding: 10px 30px;
+
+}
+
+#logo{
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(4px 5px 5px rgba(0,0,0,0.7));
+    filter: brightness(10);
+}
+
+#navigation{
+    display: flex;
+    gap: 10px;
+    margin-top: 13px;
+    margin-right: 12px;
+}
+
+#navigation button{
+    font-size: 15px;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    height: 25px;
+    width: 150px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+}
+
+#navigation button:hover{
+    background: rgba(255, 255, 255, 0.2); /* more visible */
+    backdrop-filter: blur(16px);
+    transform: scale(1.05); /* bubble expand */
+    box-shadow: 0 8px 25px rgba(143, 142, 142, 0.189), /* glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.2); /* inner shine */
+}
+

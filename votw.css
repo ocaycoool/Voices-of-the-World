@@ -1,0 +1,86 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+#page-title{
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+#logo{
+  position: relative;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -10px;
+    left: -650px;
+    filter: drop-shadow(0px 2px 1px rgba(0,0,0,0.7));
+    filter: brightness(10);
+}
+
+.main-img{
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
+    url("imgs/coastal-img-2.png");
+  background-size: cover;
+  background-position: center 85%;
+  background-repeat: no-repeat; 
+  height: 130px;
+  border-bottom: 4px solid rgb(255, 157, 100);
+}
+
+.main-img::after{
+  position: fixed;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 157, 100);
+  margin-top: 100px;
+}
+
+.main-buttons{
+  position: relative;
+}
+
+.box-L{
+  border: 2px solid rgb(255, 157, 100);
+  height: 30px;
+  width: 32%;
+}
+
+.stories-of-week-text{
+  width: 31%;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  color: rgb(255, 157, 100);
+}
+
+.box-R{
+  border: 2px solid rgb(255, 157, 100);
+  height: 30px;
+  width: 32%;
+
+}
+
+.stories-of-week{
+  display: flex;
+  width: auto;
+  height: 70px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+#mission, #create-story, #all-stories, #contact{
+border-color: #a1a560;
+height: 25px;
+}
+
+

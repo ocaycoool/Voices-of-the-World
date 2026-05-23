@@ -1,0 +1,67 @@
+#page-header{
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
+        url('imgs/cherry-blossoms-contact-Picsart-AiImageEnhancer.jpg');
+    border-bottom-color: #470d20;
+}
+
+  #name{
+   
+    width: 850px;
+    height: 50px;
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    border-color: solid #470d20;
+    border-width: 1.5px;
+    top: 70px;
+  }
+
+  #email{
+   
+    width: 850px;
+    height: 50px;
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    border-color: solid #470d20;
+    border-width: 1.5px;
+    top: 50px;
+  }
+  #message{
+    width: 850px;
+    height: 350px;
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: top;
+    border-color: solid #470d20;
+    border-width: 1.5px;
+  }
+
+  .contact-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #contact-message-submission{
+    
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 350px;
+    height: 50px;
+    background-color: #e7cbc9ff;
+    border-color: solid #470d20;
+    border-width: 1.5px;
+    margin-top: 10px;
+  }
+
+#contact-message-submission:hover{
+    background-color: rgb(227, 175, 172);
+}
+
+
+
+
+
+
+
