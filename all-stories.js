@@ -1,6 +1,4 @@
-// Makes it wait until the entire HTML document is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    
+function injectStyles() {
     const styleTag = document.createElement('style');
     styleTag.textContent = `
         .expanded-card {
@@ -27,16 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(styleTag);
 
     // choosing + config story cards
-    const storyLinks = document.querySelectorAll('.cards-container a');
+    const storyLinks = document.querySelectorAll('.cards-container .card');
     console.log(`[Story Expander] Connected! Injecting styles and managing ${storyLinks.length} cards.`);
 
     storyLinks.forEach((link, index) => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             // Prevent navigating away to written stories
-            event.preventDefault(); 
-            
+            event.preventDefault();
+
             // Find the active card inside the link (.card, .card2, etc.)
-            const card = this.querySelector('div') || this.firstElementChild; 
+            const card = this.querySelector('div') || this.firstElementChild;
 
             if (!card) return;
 
@@ -48,10 +46,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.expanded-card').forEach(openCard => {
                     openCard.classList.remove('expanded-card');
                 });
-                
+
                 // Open clicked card
                 card.classList.add('expanded-card');
             }
         });
     });
+}
+
+function appendStoriesToDOM(stories) {
+    const container = document.querySelector('.cards-container');
+    for (let index = 0; index < stories.length; index++) {
+        const story = stories[index];
+        const childDiv = document.createElement("div");
+        childDiv.className = "card-text";
+        childDiv.textContent = story.story;
+
+        const parentDiv = document.createElement("div");
+        parentDiv.className = "card";
+
+        parentDiv.appendChild(childDiv);
+        container.appendChild(parentDiv);
+    }
+    injectStyles();
+}
+function getStories() {
+    return fetch("https://script.google.com/macros/s/AKfycbz-siIu1Ex_s5uNNOKiqeorXiQY0GB9WSqgdIUvMY3R2wyNYitlPpKHvYCJ0ndvcI-E2Q/exec")
+        .then(response => response.json())
+        .then(response => response.data);
+}
+
+// Makes it wait until the entire HTML document is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    getStories().then(appendStoriesToDOM);
+
 });
