@@ -43,4 +43,23 @@
   justify-content: space-evenly;
 }
 
+.card-text{
+    border: 2px solid #76a5af;
+    border-radius: 0;
+    width: 370px;
+    height: 320px;
+}
+.card{
+    background-color: #e3f1f3ff;
+    border-radius: 0;
+    border: 1.5px solid #76a5af;
+    top: 180px;
+    left: 10px;
+    width: 400px;
+    height: 450px
+}
+
+.card:hover{
+    background-color: #aac0c9;
+}
 
