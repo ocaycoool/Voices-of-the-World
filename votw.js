@@ -87,7 +87,7 @@ function setLoading(elementSelector, isLoading){
 const PATH = "https://script.google.com/macros/s/AKfycbwHLm2t0b2FBCe4M6AqgrA398VQPZJW9nhvmG5C0RprjhLm_Dy6nB6NyOASMPn5P9T0bg/exec";
 function getStories() {
     const url = new URL(PATH);
-    url.searchParams.append("filter","all");
+    url.searchParams.append("filter","featured");
     setLoading(".cards-container", true);
     return fetch(url)
         .then(response => response.json())
