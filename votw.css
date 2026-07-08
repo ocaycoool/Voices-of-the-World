@@ -6,7 +6,7 @@ html, body{
 #page-header{
    background-image:
         linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
-        url("imgs/coastal-img-2.png");
+        url("./imgs/coastal-img-2.png");
   border-color: rgb(255, 157, 100);
 }
 
