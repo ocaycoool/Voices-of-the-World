@@ -1,3 +1,8 @@
+html, body{
+    overflow-y: contain;              
+    overscroll-behavior-y: contain;
+}
+
 #page-header{
    background-image:
         linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
@@ -39,6 +44,12 @@
   margin-top: 8px;
 }
 
+.divider{
+  height: 1px;             
+  background-color: rgb(255, 157, 100); 
+  width: 100%;
+}
+
 .cards-container{
   justify-content: space-evenly;
 }
@@ -47,9 +58,9 @@
     border: 2px solid #76a5af;
     border-radius: 0;
     width: 370px;
-    height: 320px;
+    height: 340px;
 }
-.card{
+.card{  
     background-color: #e3f1f3ff;
     border-radius: 0;
     border: 1.5px solid #76a5af;
@@ -57,6 +68,12 @@
     left: 10px;
     width: 400px;
     height: 450px
+}
+
+.card div:last-child {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 .card:hover{

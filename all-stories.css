@@ -1,7 +1,11 @@
+html, body{
+              
+    overscroll-behavior-y: contain;
+}
+
 #page-header{
     background-image:
         linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
         url('imgs/all-stories-header-enhanced.png');
 }
-
 

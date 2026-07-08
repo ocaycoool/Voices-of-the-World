@@ -83,8 +83,9 @@ function setLoading(elementSelector, isLoading){
         loadingDiv.remove();
     }
 }
+//https://script.google.com/macros/s/AKfycbwHLm2t0b2FBCe4M6AqgrA398VQPZJW9nhvmG5C0RprjhLm_Dy6nB6NyOASMPn5P9T0bg/exec
 
-const PATH = "https://script.google.com/macros/s/AKfycbwHLm2t0b2FBCe4M6AqgrA398VQPZJW9nhvmG5C0RprjhLm_Dy6nB6NyOASMPn5P9T0bg/exec";
+const PATH = "https://script.google.com/macros/s/AKfycbxtUjlnaphC8TpsV-Ya8NHraDWAMaIHUfeuRjgnpNeGsKJPuTAlkOjgJOkXR4kvaFjqUA/exec";
 function getStories() {
     const url = new URL(PATH);
     url.searchParams.append("filter","all");

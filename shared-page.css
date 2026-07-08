@@ -2,7 +2,7 @@ html,body{
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 #page-header{
@@ -94,4 +94,8 @@ html,body{
 
 .card:hover{
     background-color: #596534;
+}
+
+.loading-container{
+    font-size: 50px;
 }
