@@ -9,8 +9,6 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cinzel">
 
-    <script type="module" src="app.js"></script>
-
 </head>
 <body>
 
@@ -33,13 +31,14 @@
         <h1 id="page-title">Create A Story</h1>
     </div>
     
-    <div id="story-form">
-        <form  method="post" action="https://script.google.com/macros/s/AKfycbzl5PldGnW4wViILmHfQoKidbrzg85rWQ0aE0rM7st-46pMiF0aG63CVaS-DO391TpOvA/execc">
+    <div id="story-form-container">
+        <form id="story-form">
             <input type="text" id="name" name="name" placeholder="Name:">
             <textarea id="story" name="story" rows="5" cols="40" placeholder="Type here..."></textarea>
             <br><br>
             <button type="submit">Submit</button>
         </form>
     </div>
+     <script src="create-story.js"></script>
 </body>
 </html>

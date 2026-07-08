@@ -59,7 +59,14 @@ html, body{
     border-radius: 0;
     width: 370px;
     height: 340px;
+    overflow-y: hidden;
 }
+
+.card-text p {
+  margin-top: 0;
+  text-overflow: ellipsis;
+}
+
 .card{  
     background-color: #e3f1f3ff;
     border-radius: 0;
@@ -68,12 +75,6 @@ html, body{
     left: 10px;
     width: 400px;
     height: 450px
-}
-
-.card div:last-child {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
 }
 
 .card:hover{

@@ -60,7 +60,9 @@ function appendStoriesToDOM(stories) {
         const story = stories[index];
         const childDiv = document.createElement("div");
         childDiv.className = "card-text";
-        childDiv.textContent = story.story;
+        const storyText = document.createElement("p");
+        storyText.textContent = story.story;
+        childDiv.appendChild(storyText);
 
         const parentDiv = document.createElement("div");
         parentDiv.className = "card";
@@ -68,6 +70,7 @@ function appendStoriesToDOM(stories) {
         parentDiv.appendChild(childDiv);
 
         const metaText = document.createElement("div");
+        metaText.className = "metaText";
         metaText.style.padding = "10px";
         metaText.style.fontFamily = "'Cinzel', serif";
 
