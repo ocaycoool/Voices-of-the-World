@@ -4,36 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voices of the World</title>
-    
-    <link rel="stylesheet" href="votw.css">
 
-    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="shared-page.css">
+
+    <link rel="stylesheet" href="votw.css">
     
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cinzel">
 
-
+    <script src="votw.js"></script>
   </head>
 
   <body>
-
-    <div class="main-img">
-      
-      <button id="mission" onclick="window.location.href='mission.html'">My Mission</button>
-      <button id="create-story" onclick="window.location.href='create-story.html'">Create a Story!</button>
-      <button id="all-stories" onclick="window.location.href='all-stories.html'">All Stories</button>
-      <button id="contact" onclick="window.location.href='contact.html'">Contact</button>
-    
-      <a href="index.html">
-        <img id="logo" src="imgs/Screenshot 2026-03-26 at 10,23,32 AM-Picsart-BackgroundRemover.png">
-      </a>
-
-    </div>
-    <!-- navigation -->
-    <div class="main-buttons">
-
-      
-  
+    <div id="page-header">
+        <div id="logo-container">
+            <a href="index.html">
+                <img id="logo" src="imgs/Screenshot 2026-03-26 at 10,23,32 AM-Picsart-BackgroundRemover.png">
+            </a>
+        </div>
+        <div id="navigation">
+            <button id="mission" onclick="window.location.href='mission.html'">My Mission</button>
+            <button id="create-story" onclick="window.location.href='create-story.html'">Create a Story!</button>
+            <button id="all-stories" onclick="window.location.href='all-stories.html'">All Stories</button>
+            <button id="contact" onclick="window.location.href='contact.html'">Contact</button>
+        </div>
+        
     </div>
 
     <div class="stories-of-week">
@@ -50,6 +45,13 @@
       </div>
       
     </div>
+
+    <div class="divider"></div>
+
+    <div class="cards-container">
+        
+    </div>
+
 
   
     
