@@ -1,45 +1,11 @@
+html, body{
+              
+    overscroll-behavior-y: contain;
+}
+
 #page-header{
     background-image:
         linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),
         url('imgs/all-stories-header-enhanced.png');
 }
 
-.cards-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px; 
-    margin-top: 50px;
-    padding: 0 10px; 
-}
-
-.card-text{
-    color: black;
-    border: 2px solid #bd9860;
-    background-color: white;
-    border-radius: 5px;
-    display: inline-block;
-    width: 320px;
-    height: 220px;
-    margin-left: 11px;
-    margin-top: 10px;
-    padding: 3px;
-}
-
-.card-text:hover{
-    background-color: rgb(244, 234, 225);
-}
-
-.card, .card2, .card3,.card4{
-    background-color: #7f944eff;
-    border-radius: 5px;
-    border: 1.5px solid #616b40;
-    top: 180px;
-    left: 10px;
-    width: 350px;
-    height: 300px
-}
-
-.card:hover, .card2:hover, .card3:hover,.card4:hover{
-    background-color: #596534;
-}
