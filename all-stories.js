@@ -70,10 +70,30 @@ function appendStoriesToDOM(stories) {
     }
     injectStyles();
 }
+
+function setLoading(elementSelector, isLoading){
+    const container = document.querySelector(elementSelector);
+    if(isLoading){
+        const loadingDiv = document.createElement("div");
+        loadingDiv.className = "loading-container";
+        loadingDiv.textContent = "loading...";
+        container.appendChild(loadingDiv);
+    } else{
+        const loadingDiv = document.querySelector(".loading-container");
+        loadingDiv.remove();
+    }
+}
+//https://script.google.com/macros/s/AKfycbwHLm2t0b2FBCe4M6AqgrA398VQPZJW9nhvmG5C0RprjhLm_Dy6nB6NyOASMPn5P9T0bg/exec
+
+const PATH = "https://script.google.com/macros/s/AKfycbxtUjlnaphC8TpsV-Ya8NHraDWAMaIHUfeuRjgnpNeGsKJPuTAlkOjgJOkXR4kvaFjqUA/exec";
 function getStories() {
-    return fetch("https://script.google.com/macros/s/AKfycbz-siIu1Ex_s5uNNOKiqeorXiQY0GB9WSqgdIUvMY3R2wyNYitlPpKHvYCJ0ndvcI-E2Q/exec")
+    const url = new URL(PATH);
+    url.searchParams.append("filter","all");
+    setLoading(".cards-container", true);
+    return fetch(url)
         .then(response => response.json())
-        .then(response => response.data);
+        .then(response => response.data)
+        .finally(()=>setLoading(".cards-container", false));
 }
 
 // Makes it wait until the entire HTML document is fully loaded
