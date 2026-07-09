@@ -60,38 +60,6 @@ function appendStoriesToDOM(stories) {
         const story = stories[index];
         const childDiv = document.createElement("div");
         childDiv.className = "card-text";
-        const storyText = document.createElement("p");
-        storyText.textContent = story.story;
-        childDiv.appendChild(storyText);
-
-        const parentDiv = document.createElement("div");
-        parentDiv.className = "card";
-
-        parentDiv.appendChild(childDiv);
-
-        const metaText = document.createElement("div");
-        metaText.className = "metaText";
-        metaText.style.padding = "10px";
-        metaText.style.fontFamily = "'Cinzel', serif";
-
-        // Add this line right above your metaText.innerHTML to format the date string
-        const formattedDate = story.date ? new Date(story.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '';
-
-        metaText.innerHTML = `<h4 style="margin:0; color:#76a5af;">${story.name || 'Anonymous'}</h4>
-                            <p style="margin:0; font-size:12px; color:#555;">${formattedDate}</p>`;
-        parentDiv.appendChild(metaText);
-
-        container.appendChild(parentDiv);
-    }
-    injectStyles();
-}
-
-function appendStoriesToDOM(stories) {
-    const container = document.querySelector('.cards-container');
-    for (let index = 0; index < stories.length; index++) {
-        const story = stories[index];
-        const childDiv = document.createElement("div");
-        childDiv.className = "card-text";
         childDiv.textContent = story.story;
 
         const parentDiv = document.createElement("div");
